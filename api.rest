@@ -1,0 +1,29 @@
+//TEST FILE for REST CLIENT Extension
+
+GET http://localhost:3000/
+###
+
+GET http://localhost:3000/5
+###
+
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "title": "flight to Japan",
+    "time": "4pm",
+    "price": 15000,
+    "date": "12-12-2022"
+}
+###
+
+PUT http://localhost:3000/5
+Content-Type: application/json
+
+{
+    "title": "flight to Madagascar",
+    "price": 36000
+}
+###
+
+DELETE http://localhost:3000/1
